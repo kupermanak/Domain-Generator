@@ -11,14 +11,13 @@ window.onload = function() {
   var noun = ["jogger", "racoon"];
   var ext = [".com", ".net", ".us", ".io"];
 
-  let comb = "";
+  let comb;
   for (let i of pronoun) {
     for (let j of adj) {
       for (let k of noun) {
         for (let l of ext) {
           let message = i + j + k + l;
           comb += message + "</br>";
-          console.log(message);
         }
       }
     }
